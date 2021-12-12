@@ -7,7 +7,7 @@ describe('<TextComponent />', () => {
     renderTheme(<TextComponent>Children</TextComponent>);
     expect(screen.getByText('Children')).toBeInTheDocument();
   });
-  it('should match snapshoot', () => {
+  it('should match snapshot', () => {
     const { container } = renderTheme(<TextComponent>Children</TextComponent>);
     expect(container.firstChild).toMatchInlineSnapshot(`
       .c0 {
