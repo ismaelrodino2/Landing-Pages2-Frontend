@@ -15,6 +15,9 @@ export const Grid = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: ${theme.spacings.large};
+    @media ${theme.media.lteMedium} {
+      grid-template-columns: 1fr;
+    }
   `}
 `;
 export const GridElement = styled.div`
@@ -22,6 +25,7 @@ export const GridElement = styled.div`
     ${HeadingContainer} {
       position: relative;
       left: 5rem;
+      width: fit-content;
     }
     ${HeadingContainer}::before {
       counter-increment: counter; /* Increment the value of section counter by 1 */

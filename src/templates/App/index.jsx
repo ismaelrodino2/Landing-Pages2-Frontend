@@ -1,11 +1,9 @@
-import { Wrapper } from './styles';
+import * as Styled from './styles';
+import { Base } from '../Base';
+import { mockBase } from '../Base/mock';
 
 function Home() {
-  return (
-    <Wrapper>
-      <h1>oi</h1>
-    </Wrapper>
-  );
+  return <Base {...mockBase} />;
 }
 
 export default Home;
